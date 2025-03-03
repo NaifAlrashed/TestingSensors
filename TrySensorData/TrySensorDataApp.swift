@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct TrySensorDataApp: App {
+    @State var sensorManager = SonsorManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(sensorManager: sensorManager)
         }
     }
 }
